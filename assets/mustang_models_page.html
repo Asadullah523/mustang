@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustang Models</title>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=4845&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="models.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Mustang.</a>
+        <nav class="navbar">
+            <a href="#">Models</a>
+            <a href="#">Compare</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="/index.html" class="back-btn">
+            <i class='bx bx-arrow-back'></i>
+            Back to Home
+        </a>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Explore The Legend</h1>
+        <p>Discover the complete lineup of Ford Mustang models. From classic muscle to modern performance, find your perfect ride.</p>
+    </section>
+
+    <div class="filter-section">
+        <button class="filter-btn active" data-filter="all">All Models</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="modern">Modern</button>
+        <button class="filter-btn" data-filter="performance">High Performance</button>
+    </div>
+
+    <div class="models-container">
+        <!-- Mustang GT -->
+        <div class="model-card" data-category="modern performance">
+            <div class="model-image">
+                <img src="/assets/images/Mustang_GT.jpeg" alt="Mustang GT">
+                <div class="model-badge">NEW</div>
+            </div>
+            <div class="model-details">
+                <h2 class="model-name">Mustang GT</h2>
+                <p class="model-year">2024 Model</p>
+                <p class="model-description">The iconic 5.0L V8 delivers 450 horsepower of pure American muscle with modern refinement.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class='bx bxs-tachometer'></i>
+                        <span>450 HP</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-zap'></i>
+                        <span>4.3s 0-60</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-droplet'></i>
+                        <span>5.0L V8</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>155 mph</span>
+                    </div>
+                </div>
+                <div class="price">$41,300</div>
+                <div class="model-actions">
+                    <button class="btn-primary" onclick="openModal('gt')">View Details</button>
+                    <button class="btn-secondary">Test Drive</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mustang EcoBoost -->
+        <div class="model-card" data-category="modern">
+            <div class="model-image">
+                <img src="/assets/images/Mustang_EcoBoost.jpeg" alt="Mustang EcoBoost">
+                <div class="model-badge">POPULAR</div>
+            </div>
+            <div class="model-details">
+                <h2 class="model-name">Mustang EcoBoost</h2>
+                <p class="model-year">2024 Model</p>
+                <p class="model-description">Turbocharged 2.3L engine offering impressive power and efficiency in a legendary package.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class='bx bxs-tachometer'></i>
+                        <span>310 HP</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-zap'></i>
+                        <span>5.1s 0-60</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-droplet'></i>
+                        <span>2.3L Turbo</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>145 mph</span>
+                    </div>
+                </div>
+                <div class="price">$31,920</div>
+                <div class="model-actions">
+                    <button class="btn-primary" onclick="openModal('ecoboost')">View Details</button>
+                    <button class="btn-secondary">Test Drive</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shelby GT500 -->
+        <div class="model-card" data-category="performance">
+            <div class="model-image">
+                <img src="/assets/images/Shelby_GT500.jpeg" alt="Shelby GT500">
+                <div class="model-badge">ELITE</div>
+            </div>
+            <div class="model-details">
+                <h2 class="model-name">Shelby GT500</h2>
+                <p class="model-year">2024 Model</p>
+                <p class="model-description">The ultimate street-legal track weapon with a supercharged 5.2L V8 producing 760 horsepower.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class='bx bxs-tachometer'></i>
+                        <span>760 HP</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-zap'></i>
+                        <span>3.3s 0-60</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-droplet'></i>
+                        <span>5.2L SC V8</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>180 mph</span>
+                    </div>
+                </div>
+                <div class="price">$80,795</div>
+                <div class="model-actions">
+                    <button class="btn-primary" onclick="openModal('gt500')">View Details</button>
+                    <button class="btn-secondary">Test Drive</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mach 1 -->
+        <div class="model-card" data-category="modern performance">
+            <div class="model-image">
+                <img src="/assets/images/Mustang_Mach1.png" alt="Mustang Mach 1">
+                <div class="model-badge">LIMITED</div>
+            </div>
+            <div class="model-details">
+                <h2 class="model-name">Mustang Mach 1</h2>
+                <p class="model-year">2024 Model</p>
+                <p class="model-description">Track-focused heritage meets modern performance with enhanced aerodynamics and handling.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class='bx bxs-tachometer'></i>
+                        <span>480 HP</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-zap'></i>
+                        <span>4.2s 0-60</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-droplet'></i>
+                        <span>5.0L V8</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>163 mph</span>
+                    </div>
+                </div>
+                <div class="price">$54,595</div>
+                <div class="model-actions">
+                    <button class="btn-primary" onclick="openModal('mach1')">View Details</button>
+                    <button class="btn-secondary">Test Drive</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Classic Mustang 1967 -->
+        <div class="model-card" data-category="classic">
+            <div class="model-image">
+                <img src="/assets/images/Mustang_Fast.jpeg" alt="Classic Mustang">
+                <div class="model-badge">CLASSIC</div>
+            </div>
+            <div class="model-details">
+                <h2 class="model-name">Mustang Fastback</h2>
+                <p class="model-year">1967 Classic</p>
+                <p class="model-description">The timeless icon that defined American muscle. A piece of automotive history.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class='bx bxs-tachometer'></i>
+                        <span>320 HP</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-zap'></i>
+                        <span>6.5s 0-60</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-droplet'></i>
+                        <span>7.0L V8</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>130 mph</span>
+                    </div>
+                </div>
+                <div class="price">$85,000</div>
+                <div class="model-actions">
+                    <button class="btn-primary" onclick="openModal('classic')">View Details</button>
+                    <button class="btn-secondary">Inquire</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dark Horse -->
+        <div class="model-card" data-category="modern performance">
+            <div class="model-image">
+                <img src="/assets/images/Mustang_DarkHorse.jpeg" alt="Mustang Dark Horse">
+                <div class="model-badge">NEW</div>
+            </div>
+            <div class="model-details">
+                <h2 class="model-name">Mustang Dark Horse</h2>
+                <p class="model-year">2024 Model</p>
+                <p class="model-description">The track-focused predator with aggressive styling and race-inspired components.</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class='bx bxs-tachometer'></i>
+                        <span>500 HP</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-zap'></i>
+                        <span>3.9s 0-60</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-droplet'></i>
+                        <span>5.0L V8</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>165 mph</span>
+                    </div>
+                </div>
+                <div class="price">$62,515</div>
+                <div class="model-actions">
+                    <button class="btn-primary" onclick="openModal('darkhorse')">View Details</button>
+                    <button class="btn-secondary">Test Drive</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-specs" id="modalSpecs"></div>
+                <div class="model-actions">
+                    <button class="btn-primary">Schedule Test Drive</button>
+                    <button class="btn-secondary">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mustang Collection. Experience the Legend.</p>
+    </footer>
+    <script src="models.js"></script>
+</body>
+
+</html>
