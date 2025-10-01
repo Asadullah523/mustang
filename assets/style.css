@@ -594,6 +594,35 @@
             transform: rotate(-45deg) translate(7px, -7px);
         }
         
-    
-        /* CSS for models page */
+        /* Arrow pointer animation */
+        .arrow-pointer {
+            animation: arrow-entry 1.4s ease forwards, blink-pulse 1.5s ease-in-out infinite;
+            animation-delay: 0s, 1.4s;
+            opacity: 0;
+            height: 110px;
+        }
+
+        @keyframes arrow-entry {
+            0% {
+                transform: translateY(-50px) rotate(-180deg);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink-pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.3;
+                transform: scale(0.95);
+            }
+        }
+
+       
         
